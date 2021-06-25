@@ -91,6 +91,7 @@ public class CheckIn {
                 System.out.println("\nPassenger #" + Thread.currentThread().getId() + " esce da questo CHECK-IN e si rimette in coda");
                 checkInControll = false;
 
+                //SE NON CI SONO PIU' PASSEGERI
                 int id = waitingQueue.size() >0 ? waitingQueue.getFirst() :0;
                 waitingQueue.removeFirst();
                 //RITENTERA' IL CHECK-IN
